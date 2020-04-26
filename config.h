@@ -101,6 +101,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	{ MODKEY,                       XK_F5,     xrdb,           {.v = NULL } },
 	{ 0,                            XK_Print,  spawn,          SHCMD("scrot -a $(slop -f '%x,%y,%w,%h')  /home/gio/Imagens/screenshots/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'")},
+  { Controlmask|Mod1Mask,         XK_s,      spawn,          SHCMD("xclip -o | custom-dl")},
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
